@@ -69,6 +69,7 @@ num_samples = 2
 def infer(prompt, steps, scale):
     
     with context("cuda"):
+        print(prompt)
         images = pipe(num_samples*[prompt],
                       guidance_scale=scale,
                       num_inference_steps=int(steps)).images
@@ -299,7 +300,6 @@ with block as demo:
         
         text.submit(infer, inputs=[text, steps, scale], outputs=gallery)
         btn.click(infer, inputs=[text, steps, scale], outputs=gallery)
-        print(text)
 
     gr.HTML(
             """
