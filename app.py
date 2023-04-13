@@ -197,6 +197,12 @@ css = """
         #generated_id{
             min-height: 700px
         }
+        .logo-img {
+            float: left;
+        }
+        nav {
+            float: right;
+        }
 """
 block = gr.Blocks(css=css)
 
@@ -255,12 +261,13 @@ with block as demo:
                   font-size: 1.75rem;
                 "
               >
+                <img class="logo-img" src="vinai.png" ALT="align box" ALIGN=CENTER>
                 <h1 style="font-weight: 900; margin-bottom: 7px;">
                   Multilingual Stable Diffusion
                 </h1>
               </div>
               <p style="margin-bottom: 10px; font-size: 94%">
-                Stable Diffusion Pipeline that supports prompts in 50 different languages.
+                Stable Diffusion Pipeline that supports Vietnamese.
               </p>
               <p style="margin-bottom: 10px; font-size: 94%">
                 {colab_instruction}
