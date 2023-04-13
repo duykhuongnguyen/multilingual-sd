@@ -10,7 +10,6 @@ from transformers import (
     MBart50TokenizerFast,
     MBartForConditionalGeneration,
 )
-from chatgpt_wrapper import OpenAIAPI
 
 import utils
 
