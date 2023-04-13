@@ -1,0 +1,6 @@
+git+https://github.com/huggingface/transformers.git
+accelerate
+git+https://github.com/huggingface/diffusers.git
+torch
+sentencepiece
+streamlit
